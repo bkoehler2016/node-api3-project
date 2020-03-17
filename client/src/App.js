@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
+import UserList from "./components/UsersList";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to Client</h1>
+      <UserList />
     </div>
   );
 }

@@ -24,6 +24,20 @@
   color: white;
 }
 
+.card {
+  width: 50%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #C1C2CE;
+  background-color: #CCC8C0;
+
+}
+
+.row {
+  color: #160A11;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -32,6 +46,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

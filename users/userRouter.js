@@ -32,11 +32,6 @@ router.get("/", (req, res) => {
     .then(data => res.json(data))
     .catch(err => res.status(404).json({ message: "could not find users" }));
 });
-// users
-// .get()
-// .then(res.status(200).send(`hello from the Users and ${req.name} route`))
-// testing the custom addName middleware in server.js, it worked!
-// -------------------------------------------------------------------
 
 router.get("/:id", validateUserId(), (req, res) => {
   users
@@ -48,21 +43,6 @@ router.get("/:id", validateUserId(), (req, res) => {
         .json({ message: "could not find users with this ID", err })
     );
 });
-// -------------------------------------------------------------------
-
-// router.get("/posts/:id", validateUserId(), (req, res) => {
-//   users
-//     .getUserPosts(req.params.id)
-//     .then(userposts => {
-//       res.status(200).json(userposts);
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       res.status(500).json({ message: "error getting userPosts" });
-//     });
-// });
-
-// -------------------------------------------------------------------
 
 router.delete("/:id", validateUserId(), (req, res) => {
   users

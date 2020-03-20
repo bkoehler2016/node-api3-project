@@ -9,7 +9,7 @@ export default class UsersList extends React.Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:9000/api/users")
+      .get("http://localhost:9000/users")
       .then(res => {
         console.log(res.data);
         this.setState({ users: res.data });
